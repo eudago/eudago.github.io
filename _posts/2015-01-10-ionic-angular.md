@@ -22,16 +22,20 @@ Primero de todo hay que instalar nodejs en nuestro equipo, a poder ser la ultima
 
 Luego passamos a instalar Ionic 2:
 
+{% highlight html %}
     npm install -g ionic@beta
-    
+{% endhighlight %} 
+  
 ### creando el proyecto
 
 Todo lo que haremos aquí podeis encontrar-lo en la propia web de Ionic 2
 
+{% highlight html %}
     ionic start nombre_proyecto --v2
     cd nombre_proyecto
     ionic serve
-    
+{% endhighlight %}
+
 En caso de queos salga el error (como a mi) "cannot find module webpack" podeis solucionar-lo con:
 
 {% highlight html %}
@@ -43,6 +47,11 @@ al ejecutar la aplicación con ionic serve podremos ver que se nos abre una apli
 ![app]({{ site.url }}/images/ionic1.png)
 
 Bien esta es la aplicación por defecto de la que partiremos para crear una aplicación un poco mas compleja.
+
+### extras
+
+##### Ionic lab
+
 
 ### aplicación
 
