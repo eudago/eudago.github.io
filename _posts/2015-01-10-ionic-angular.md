@@ -2,8 +2,8 @@
 layout: post
 title: Creando una aplicación con Ionic y Angular 2
 description: "primer post sobre como crear una simple aplicación usando ionic 2 y angular 2."
-modified: 2016-01-04
-tags: [sample post]
+modified: 2016-01-10
+tags: [ionic,angular,javascript]
 image:
   feature: post_ionic.png
   credit: eudago
@@ -34,7 +34,9 @@ Todo lo que haremos aquí podeis encontrar-lo en la propia web de Ionic 2
     
 En caso de queos salga el error (como a mi) "cannot find module webpack" podeis solucionar-lo con:
 
+{% highlight html %}
     npm install webpack --save-dev --save-exact
+{% endhighlight %}
     
 al ejecutar la aplicación con ionic serve podremos ver que se nos abre una aplicación por defecto:
 
