@@ -1,101 +1,48 @@
 ---
 layout: post
-title: Sample Post
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-modified: 2014-12-24
+title: Creando una aplicación con Ionic y Angular 2
+description: "primer post sobre como crear una simple aplicación usando ionic 2 y angular 2."
+modified: 2016-01-04
 tags: [sample post]
 image:
   feature: abstract-3.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  credit: eudago
 ---
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
-# Heading 1
+# Creando una aplicación con Ionic y Angular 2 (I)
 
-## Heading 2
+### introducción
 
-### Heading 3
+Aplicaciones nativas cada vez van a menos, por el simple echo que una aplicació hibrida escrita con javascript y html la puedes hacer correr en varios sistemas operativos a la vez y no tienes que precuparte, es decir pues crear una aplicación con Ionic 2 y Angular 2 tanto para ios como Android o una aplicación con electron y angular 2 y hacerla correr en os x, Linux y Windows.
 
-#### Heading 4
+A parte hay otraz razones de peso para passarse a las aplicaciones hibridas, desde mi punto de vista hay una mejora substancial en quanto al aspecto visual de una aplicación y es que la cosa cambia mucho quando tienes que utilizar Gtk o Cocoa vs (Html y css) las librerias nativas te són bastante restrictivas y es dificil salirse de los patrones, en cambio con html es mucho más facil crear.
 
-##### Heading 5
+### instalación
 
-###### Heading 6
+Primero de todo hay que instalar nodejs en nuestro equipo, a poder ser la ultima versión.
 
-### Body text
+Luego passamos a instalar Ionic 2:
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
+    npm install -g ionic@beta
+    
+### creando el proyecto
 
-![Smithsonian Image]({{ site.url }}/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
+Todo lo que haremos aquí podeis encontrar-lo en la propia web de Ionic 2
 
-*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times <cite>(That’s a citation)</cite>. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+    ionic start nombre_proyecto --v2
+    cd nombre_proyecto
+    ionic serve
+    
+En caso de queos salga el error (como a mi) "cannot find module webpack" podeis solucionar-lo con:
 
-HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+    npm install webpack --save-dev --save-exact
+    
+al ejecutar la aplicación con ionic serve podremos ver que se nos abre una aplicación por defecto:
 
-### Blockquotes
+![app]({{ site.url }}/images/ionic1.png)
 
-> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+Bien esta es la aplicación por defecto de la que partiremos para crear una aplicación un poco mas compleja.
 
-## List Types
+### aplicación
 
-### Ordered Lists
-
-1. Item one
-   1. sub item one
-   2. sub item two
-   3. sub item three
-2. Item two
-
-### Unordered Lists
-
-* Item one
-* Item two
-* Item three
-
-## Tables
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
-{: rules="groups"}
-
-## Code Snippets
-
-Syntax highlighting via Pygments
-
-{% highlight css %}
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-{% endhighlight %}
-
-Non Pygments code example
-
-    <div id="awesome">
-        <p>This is great isn't it?</p>
-    </div>
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-{% highlight html %}
-<a href="#" class="btn btn-success">Success Button</a>
-{% endhighlight %}
-
-<div markdown="0"><a href="#" class="btn">Primary Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
