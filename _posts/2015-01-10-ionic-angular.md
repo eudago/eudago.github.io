@@ -5,12 +5,10 @@ description: "primer post sobre como crear una simple aplicación usando ionic 2
 modified: 2016-01-04
 tags: [sample post]
 image:
-  feature: abstract-3.jpg
+  feature: post_ionic.png
   credit: eudago
 ---
 
-
-# Creando una aplicación con Ionic y Angular 2 (I)
 
 ### introducción
 
