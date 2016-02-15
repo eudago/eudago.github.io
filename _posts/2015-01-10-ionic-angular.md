@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creando una aplicación con Ionic y Angular 2
+title: Creando una aplicación con Ionic 2
 description: "primer post sobre como crear una simple aplicación usando ionic 2 y angular 2."
 modified: 2016-01-10
 tags: [ionic,angular,javascript]
@@ -61,8 +61,16 @@ Podemos ver que la estructura del proyecto tiene una pinta tal que:
 
 ![app]({{ site.url }}/images/ionicstructura.png)
 
-Realmente para construir podemos obiar todas las carpetas y archivos y solo centrarnos en la estructura de app:
+Realmente para construir podemos obiar todas las carpetas y archivos y solo centrarnos en la estructura de app, que encontraremos dentro la carpeta app:
 
-![app]({{ site.url }}/images/ionicstructura.png)
+![app]({{ site.url }}/images/appstructure.png)
 
-Por una parte tenemos los componentes 
+Cada componente estara formado por tres archivos, componente.js donde estara la logica del componente, componente.html y componente.scss donde se encontrara la parte visual del componente.
+
+El componente principal es app.js,app.html que serà el primer componente que cargue al iniciar la apllicación.
+
+Yo aparte del componente principal he creado dos componentes más info y game, el compoente info solo contiene información del juego y el componente game es el juego ensi.
+
+Veamos la logica del juego game.js: 
+
+<script src="https://gist.github.com/eudago/4e8d9b7bf4b6939ccfd5.js"></script>
