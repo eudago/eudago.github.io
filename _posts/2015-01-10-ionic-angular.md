@@ -74,3 +74,11 @@ Yo aparte del componente principal he creado dos componentes más info y game, e
 Veamos la logica del juego game.js: 
 
 <script src="https://gist.github.com/eudago/4e8d9b7bf4b6939ccfd5.js"></script>
+
+La vista del componente game:
+
+<script src="https://gist.github.com/eudago/814728c1b4a9d49abd82.js"></script>
+
+Y el resultado:
+
+![app]({{ site.url }}/images/tutionic.mov.gif)
